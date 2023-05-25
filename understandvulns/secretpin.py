@@ -1,4 +1,4 @@
-pin = "1337"
+pin = "12"
 secret_sentence = """
 Look at these cool penguins 
         (o_
