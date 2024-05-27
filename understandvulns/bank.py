@@ -3,6 +3,7 @@
 bank_account = 1000
 
 while True:
+    customer_name = input("Enter name of customer: ")
     number = float(input("Enter a number: "))
     action = input("Enter 'withdraw' or 'deposit': ")
 
@@ -11,4 +12,4 @@ while True:
     elif action == "deposit":
         bank_account += number
 
-    print("Bank account balance: $", bank_account)
+    print(f"Bank account balance: ${bank_account} customer name: {customer_name}")
