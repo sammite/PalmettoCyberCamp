@@ -1,17 +1,19 @@
 #include <stdio.h>
 #include <string.h>
 
-
-//compile with gcc -o bufflow pwnme.c -no-pie
+// compile with 
+// gcc -i bufflow pwnme.c
 int main() {
     char buffer[10]; // A buffer with a fixed size of 10 bytes
-
+    int specialval = 1;
     printf("Enter some text: ");
     gets(buffer); 
 
 
     printf("You entered: %s\n", buffer);
-
+    if (specialval != 1) {
+    	secretfunction();
+    }
     return 0;
 }
 
