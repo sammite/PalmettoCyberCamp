@@ -3,7 +3,7 @@
 
 // compile with gcc -g -o bufflowchallenge pwnme.challenge.c -no-pie
 int main() {
-    char buffer[11]; // A buffer with a fixed size of 10 bytes
+    char buffer[11]; // A buffer with a fixed size
     int protector = 0;
     long long int specialval = 7;
     printf("Enter some text: ");
