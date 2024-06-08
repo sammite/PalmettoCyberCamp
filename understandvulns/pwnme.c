@@ -3,6 +3,7 @@
 
 // compile with 
 // gcc -i bufflow pwnme.c
+// think about the null byte!
 int main() {
     char buffer[10]; // A buffer with a fixed size of 10 bytes
     int specialval = 1;
