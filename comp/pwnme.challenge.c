@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+// compile with gcc -g -o bufflowchallenge pwnme.challenge.c -no-pie
 int main() {
     char buffer[11]; // A buffer with a fixed size of 10 bytes
     int protector = 0;
