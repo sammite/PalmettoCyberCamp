@@ -3,9 +3,15 @@
 // Add cookie with interesting stuff
 // add different way of bypassing auth
 // add hidden file
+
+function printFlag() {
+    echo "<h1>As Admin, you have permission! Flag: PCSC-PHPFLAG-PCSC\n</h1>";
+	
+}
+
 function checkAdminValue($params) {
     if (isset($params['mega<>Admin']) && base64_decode($params['mega<>Admin']) === 'allThePerms') {
-        echo "<h1>As Admin, you have permission! Flag: PCSC-PHPFLAG-PCSC\n</h1>";
+        printFlag();
     }
 }
 
