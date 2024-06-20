@@ -1,15 +1,19 @@
 <?php
 // TODO: 
+// Add cookie with interesting stuff
+// add different way of bypassing auth
+// add hidden file
 
-// Removed the real flag for safety
 function printFlag() {
-    echo "<h1>As Admin, you have permission! Flag: PCSC-<REDACTED>-PCSC\n</h1>";
+    echo "<h1>As Admin, you have permission! FLAG 2: <REDACTED>\n</h1>";
 	
 }
 
 function checkAdminValue($params) {
     if (isset($params['mega<>Admin']) && base64_decode($params['mega<>Admin']) === 'allThePerms') {
         printFlag();
+    } else {
+    	echo "<h1>Nearly there! FLAG 1 is <REDACTED></h1>";
     }
 }
 
