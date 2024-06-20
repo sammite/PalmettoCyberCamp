@@ -13,7 +13,7 @@ function checkAdminValue($params) {
     if (isset($params['mega<>Admin']) && base64_decode($params['mega<>Admin']) === 'allThePerms') {
         printFlag();
     } else {
-    	echo "Nearly there! FLAG 1 is PCSC-PHPFLAG-1-PCSC";
+    	echo "<h1>Nearly there! FLAG 1 is PCSC-PHPFLAG-1-PCSC</h1>";
     }
 }
 
