@@ -2,6 +2,7 @@
 #include <string.h>
 
 // compile with gcc -g -o bufflowchallenge pwnme.challenge.c -no-pie
+// or with x86_64-w64-mingw32-gcc -g -o bfflowchallenge.exe pwnme.challenge.c -no-pie
 int main() {
     char buffer[11]; // A buffer with a fixed size
     int protector = 0;
